@@ -1,0 +1,442 @@
+.vid{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    filter:blur(10px);
+ }
+
+ .dark{
+    background-color: black;
+    color: white;
+ }
+ 
+
+.light{
+    background-color: white;
+    color: black;
+ }
+
+.box-1{
+    background-color: black;
+    color: white;
+}
+
+
+
+.user-Image{
+    /* background-color: white; */
+    padding: 1.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: user  5s infinite linear;
+    border-radius: 20px;
+}
+@keyframes user{
+    0%{
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+        filter: grayscale(0);
+        box-shadow: 3px 3px 20px red, 3px 3px 50px red;
+    }
+    100%
+    {
+        transform: scale(1);
+        filter: grayscale(1);
+    }
+
+}
+
+.btn{
+    position: relative;
+    z-index: 1;
+}
+
+.btn::before{
+    content: "";
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+    z-index: -1;
+}
+
+.btn:hover::before{
+    transform: scaleX(1);
+}
+
+.icon{
+    transition: all .5s;
+}
+.icon:hover{
+    color: black;
+    background-color: red;
+    box-shadow: 0 0 20px red;
+    transform: scale(1.1) translateY(-10px);
+    /* transform: ; */
+
+}
+
+
+
+
+
+
+/* trasitins */
+.logo{
+    animation: slideright 1s;
+}
+
+.list a{
+    animation: slidetop .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+    opacity: 0;
+}
+
+.navbtn button{
+    animation: slideleft 1s;
+}
+
+.social div{
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+    animation-delay: calc(.1s*var(--i));
+}
+
+
+.text h1{
+    animation: slidetop 1s;
+}
+
+.text p{
+    animation: slideleft 1s;
+}
+
+
+
+.text button{
+    animation: slidebottom 1s;
+}
+
+.cv button{
+    opacity: 0;
+    animation: slidebottom .5s ease forwards;
+    animation-delay: calc(.12s*var(--i));
+}
+
+.dot{
+    left: calc(50% - 5px);
+    /* margin-top: 70px; */
+    box-shadow: 0 0 20px red,0 0 50px red;
+}
+.about{
+    animation: appear;
+    animation-timeline: view();
+    /* animation-range: entry 0%; */
+}
+
+.bx1{
+    border: 1px solid red;
+    box-shadow: 0 0 20px red;
+    animation: slideright;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.bx2{
+    border: 1px solid red;
+    box-shadow: 0 0 20px red;
+    animation: slideleft;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.bx3{
+    border: 1px solid red;
+    box-shadow: 0 0 20px red;
+    animation: slideright;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.dot1{
+    animation: slideleft;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.dot2{
+    animation: slideright;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.dot3{
+    animation: slideleft;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.line{
+    box-shadow: 0 0 20px red,0 0 50px red;
+    animation: fade 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.h1{
+    animation: fade 3s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        /* scale: 0.4; */
+    }
+    to{
+        opacity: 1;
+        /* scale: 1; */
+    }
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1.1;
+    }
+}
+
+
+.html{
+    position: relative;
+    height: 10px;
+    animation: bar 1s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.html::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+    z-index: 100;
+}
+
+.html::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 10px;
+    width: 18px;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    z-index: 1;
+}
+
+@keyframes bar{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+
+
+.amz{
+    box-shadow: 0 0 30px red;
+    transition: all .5s;
+}
+.amz:hover{
+    scale: 1.1;
+    box-shadow: 0 0 40px red, 0 0 50px red;
+}
+
+.hcj:hover{
+    scale: 1.1;
+    filter: drop-shadow(0 0 20px white);
+}
+
+.link:hover{
+    color: white;
+    box-shadow: 0 0 20px red;
+}
+
+
+.ex1{
+    animation: slideright;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.ex2{
+    animation: slideleft;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+.logo1{
+    transition: 2s;
+    animation: logo infinite 2s;
+}
+@keyframes logo{
+    0%{
+        transform: translateY(-80%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-80%);
+    }
+}
+
+.logo2{
+    transition: 2s;
+    animation: logo2 infinite 2s;
+}
+@keyframes logo2{
+    0%{
+        transform: translateY(80%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(80%);
+    }
+}
+
+.logo3{
+    transition: 2s;
+    animation: logo3 infinite 2s;
+}
+@keyframes logo3{
+    0%{
+        transform: translateX(300%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(300%);
+    }
+}
+
+.logo4{
+    transition: 2s;
+    animation: logo4 infinite 2s;
+}
+@keyframes logo4{
+    0%{
+        transform: translateX(-300%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+
+.sk-logo{
+    filter: drop-shadow(0 0 10px red);
+}
+
+
+
+
+
+
+
+
+
+.contact{
+    transition: .4s;
+}
+.contact:hover{
+    color: blue;
+    scale: 1.1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideright{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidebottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideleft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
