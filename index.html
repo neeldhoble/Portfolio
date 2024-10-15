@@ -12,7 +12,7 @@
 <body class="bg-black text-white">
     <!-- <video autoplay loop muted src="./images/fire (2).mp4" class="vid"></video> -->
     <!-- nav -->
-    <nav>
+    <nav id="nav">
         <div class="relative max-w-[1080px] mx-auto flex items-center justify-around py-3 mt-1 navbtn">
 
             <!-- logo -->
@@ -21,12 +21,13 @@
             <!-- list -->
             <div class="hidden md:block">
                 <ul class="flex gap-4 list">
-                    <a href="#" class="font-bold text-[20px] hover:text-red-600 active " style="--i:1"><li>Home</li></a>
-                    <a href="#" class="font-bold text-[20px] hover:text-red-600" style="--i:2"><li>Skills</li></a>
-                    <a href="#" class="font-bold text-[20px] hover:text-red-600" style="--i:3"><li>Resume</li></a>
-                    <a href="#" class="font-bold text-[20px] hover:text-red-600" style="--i:4"><li>Projects</li></a>
-                    <a href="#" class="font-bold text-[20px] hover:text-red-600" style="--i:5"><li>Experiance</li></a>
-                    <a href="#" class="font-bold text-[20px] hover:text-red-600" style="--i:6"><li>Contact</li></a>
+                    <a href="#hero" class="font-bold text-[20px] hover:text-red-600 active " style="--i:1"><li>Home</li></a>
+                    <a href="#about" class="font-bold text-[20px] hover:text-red-600" style="--i:2"><li>About Me</li></a>
+                    <a href="#skill" class="font-bold text-[20px] hover:text-red-600" style="--i:3"><li>Skills</li></a>
+                    <a href="#project" class="font-bold text-[20px] hover:text-red-600" style="--i:4"><li>Projects</li></a>
+                    <a href="#experience" class="font-bold text-[20px] hover:text-red-600" style="--i:5"><li>Experience</li></a>
+                    <a href="#contact" class="font-bold text-[20px] hover:text-red-600" style="--i:6"><li>Contact</li></a>
+                    <a href="#contact" class="font-bold text-[20px] hover:text-red-600" style="--i:6"><li><span class="text-red-600 hover:text-white">Resume</span></li></a>
                 </ul>
             </div>
 
@@ -82,14 +83,18 @@
      <!-- about -->
     <section id="about">
         <div class="max-w-[1080px] mx-auto flex flex-col justify-around items-center py-28 about">
-            <h1 class="text-[50px]">About <span class="text-red-600">Me</span></h1>
-            <p class="text-[20px] font-bold w-[80%] leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatem voluptas voluptate dolores dicta placeat iure inventore perspiciatis aperiam quidem, blanditiis debitis dolorum laudantium incidunt ab obcaecati quae enim ex?</p>
+            <h1 class="text-[70px]">About <span class="text-red-600">Me</span></h1>
+            <p class="text-[20px] font-bold w-[80%] leading-8">Hello! I'm Neel Dhoble, a passionate frontend developer. Currently, I'm in my 3rd year of engineering, pursuing a CSBS degree, where I’m honing my skills in both software development and understanding the broader business landscape.
+
+                Over the years, I've developed a keen eye for design and a love for creating intuitive and user-friendly web interfaces. My academic background, combined with hands-on experience in web development, has equipped me with the technical skills and creative problem-solving abilities to tackle real-world challenges.
+                
+                I'm constantly exploring new technologies and methodologies, striving to stay at the forefront of the ever-evolving tech world. Whether it’s building responsive websites or enhancing user experiences, I’m driven by the desire to deliver clean, efficient, and aesthetically pleasing solutions.</p>
         </div>
     </section>
 
      <!-- Education -->
     <section id="education">
-        <h1 class="mx-auto flex justify-center text-[50px] h1"><span class="text-red-600">Edu</span>cation</h1><br><br>
+        <h1 class="mx-auto flex justify-center text-[70px] h1"><span class="text-red-600">Edu</span>cation</h1><br><br>
         <div class="max-w-[1080px] mx-auto relative">
             <!-- straight line -->
             <div class="absolute h-[1600px] w-[6px] bg-red-600 mx-[50%] hidden md:block line"></div>
@@ -127,14 +132,14 @@
                 <p>Currently in : 3<sup>rd</sup> Year</p><br>
                 <p>Currently pursuing a CSBS degree, where I am gaining a strong foundation in both computer science and business principles. My coursework includes software development, data structures, business analytics, and management, providing me with the skills necessary to bridge the gap between technology and business in real-world applications.</p><br>
 
-                <a href="https://www.oasiseducation.co.in/"><button class=" hover:bg-red-600 font-bold  px-4 py-2 border rounded-md link text-white">College Info <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+                <a href="https://www.stvincentngp.edu.in/"><button class=" hover:bg-red-600 font-bold  px-4 py-2 border rounded-md link text-white">College Info <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
             </div>
         </div>
     </section>
 
       <!-- skills -->
     <section id="skill">
-        <h1 class=" flex mx-auto justify-center mt-36 mb-24 text-[50px] h1">Technical<span class="text-red-600 pl-3">Skills</span></h1>
+        <h1 class=" flex mx-auto justify-center mt-36 mb-24 text-[70px] h1">Technical<span class="text-red-600 pl-3">Skills</span></h1>
         <div class="max-w-[1080px] mx-auto flex flex-col md:flex-row justify-between items-center">
             <!-- text  -->
             <div class="w-[50%]">
@@ -183,7 +188,7 @@
 
        <!-- projects -->
     <section id="project">
-            <h1 class="flex mx-auto items-center justify-center text-[50px] mt-52 h1"><span class="text-red-600 pr-3">My</span>Projects</h1>
+            <h1 class="flex mx-auto items-center justify-center text-[70px] mt-52 h1"><span class="text-red-600 pr-3">My</span>Projects</h1>
             <div class="max-w-[1080px] mx-auto flex flex-col md:flex-row justify-around items-center py-28">
                     <!-- text  -->
                     <div class="ex1">
@@ -255,9 +260,33 @@
         </div>
     </section>
 
+    <section>
+        <div class="max-w-[1080px] mx-auto flex flex-col md:flex-row justify-around items-center py-28">
+                <!-- text  -->
+                <div class="w-[40%] ex1">
+                    <h1 class="text-[40px]">My fourth Project</h1>
+                    <h3 class="text-[25px]">Weather App</h3>
+                    <p class="text-[20px]">I made this website with my skill in HTML, CSS, Tailwind, JavaScript</p><br>
+                    <div class="flex">
+                        <a href="https://www.w3schools.com/html/" class="hcj"><img src="./images/html.png" alt="" height="100px" width="80px"></a>
+                        <a href="https://www.w3schools.com/css/" class="hcj"><img src="./images/css.png" alt="" height="100px" width="80px"></a>
+                        <a href="https://www.w3schools.com/css/" class="hcj"><img src="./images/js.png" alt="" height="100px" width="80px"></a>
+                    </div><br>
+                    <a href="https://password-generator-five-tan.vercel.app/"><button class="border hover:bg-red-600 px-4 py-1 rounded-md link">
+                        link <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button></a>
+                </div>
+
+                <!-- img  -->
+                <div class="relative w-[50%] pt-20 md:pt-0 ex2">
+                    <video autoplay loop muted src="./images/Weather.mp4" class="amz"></video>
+                </div>
+        </div>
+    </section>
+
         <!-- experiance -->
-    <section id="experiance">
-            <h1 class="flex mx-auto items-center justify-center text-[60px] mt-32 h1">Exper<span class="text-red-600 pr-3">iance</span></h1>
+    <section id="experience">
+            <h1 class="flex mx-auto items-center justify-center text-[70px] mt-32 h1">Exper<span class="text-red-600 pr-3">iance</span></h1>
             <div class="max-w-[1080px] mx-auto flex flex-col md:flex-row gap-24 py-28">
                 <div class="mx-auto md:mx-0 border border-red-600 shadow-lg shadow-red-600 w-[50%] p-5 box-1 rounded-lg bx1">
                     <h1 class="font-bold text-[40px]">Company Name : <a href="https://www.codsoft.in/" class="text-blue-600">CodSoft</a></h1>
@@ -280,7 +309,7 @@
     </section>
 
          <!-- contact  -->
-    <a href="#hero"><div class="h-[90px] bg-gray-900 flex justify-center items-center text-[30px]">Back To Top <i class="fa-solid fa-arrow-up pl-3"></i></div></a>
+    <a href="#nav"><div class="h-[90px] bg-gray-900 flex justify-center items-center text-[30px]">Back To Top <i class="fa-solid fa-arrow-up pl-3"></i></div></a>
 
 
     <section class="bg-gray-950" id="contact">
