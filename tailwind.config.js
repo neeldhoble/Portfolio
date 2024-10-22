@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [],
   fontFamily:{
-    mullish:["mullish","sans-serif"]
+    mullish:["Helviticata"]
   },
   colors:{
     deepBlue:"#02042a",
